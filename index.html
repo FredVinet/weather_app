@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="p-5 max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-5">Villes enregistrées :</h1>
+        <div id="error" class="text-red-500 mb-5 hidden"></div>
+
+        <div id="citiesContainer" class="grid grid-cols-3 gap-4"></div>
+    </div>
+
+    <div class="p-5 max-w-4xl mx-auto">
+        <h1>Création de compte</h1>
+        <div class="flex space-x-2 mb-5">
+            <input 
+                id="usernameInput" 
+                type="text" 
+                placeholder="Entrez votre username" 
+                class="border p-2 w-full rounded"
+            />
+            <input 
+                id="passwordInput" 
+                type="password" 
+                placeholder="Entrez votre mot de passe" 
+                class="border p-2 w-full rounded"
+            />
+            <button 
+                id="createAccountButton"
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+                Crée le compte
+            </button>
+        </div>
+    </div>
+
+    <div class="p-5 max-w-4xl mx-auto">
+        <h1>Entrez une ville et un pays</h1>
+        <div class="flex space-x-2 mb-5">
+            <input 
+                id="cityInput" 
+                type="text" 
+                placeholder="Entrez votre ville" 
+                class="border p-2 w-full rounded"
+            />
+            <input 
+                id="countryInput" 
+                type="text" 
+                placeholder="Entrez votre pays" 
+                class="border p-2 w-full rounded"
+            />
+            <button 
+                id="createLocationsButton"
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+                Crée la location
+            </button>
+        </div>
+    </div>
+
+    <div class="p-5 max-w-4xl mx-auto">
+        <h1>Login</h1>
+        <div class="flex space-x-2 mb-5">
+            <input 
+                id="usernameInputLog" 
+                type="text" 
+                placeholder="Entrez votre username" 
+                class="border p-2 w-full rounded"
+            />
+            <input 
+                id="passwordInputLog" 
+                type="password" 
+                placeholder="Entrez votre mot de passe" 
+                class="border p-2 w-full rounded"
+            />
+            <button 
+                id="loginButton"
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+                Connexion
+            </button>
+            <button 
+                id="logoutButton"
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+                Déconnexion
+            </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
